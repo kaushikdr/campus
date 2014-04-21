@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% set title='Dashboard' %}
+
+{% block content %}
+	
+	{% for post in posts %}
+
+	<article>
+		<section>
+			<a href="/post/{{post.key.id()}}" class="title">{{post.caption | safe}}</a>
+			<h3 class="author">by   {{post.author.get().group}}   from    {{post.author.get().college}}   college   on   {{post.created.strftime('%d %b, %Y')}}</h3>
+		</section>
+		{% if permalink %}
+			<div><video width="640" height="360" controls preload='auto'>
+					<source src="{{ video }}">
+				</video>
+			</div>
+
+		{% else %}
+			<div><a href="/post/{{post.key.id()}}">
+					<video width="200" height="120" controls preload='auto'>
+						<source src="{{ video }}">
+					</video>
+				</a>
+			</div>
+		{% endif %}
+	</article>
+		{% else %}
+	<div class="no-post">
+		<p>Drats! No Videos found :(</p>	
+	</div>
+	{% endfor %}
+
+{% endblock content %}

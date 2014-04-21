@@ -1,0 +1,191 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Bitter:700);
+@import url(http://fonts.googleapis.com/css?family=Tangerine);
+@import url(http://fonts.googleapis.com/css?family=Eater);
+@import url(http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+
+
+::selection {
+	background-color: #E74C3C;
+	color: #fff;
+}
+body {
+	background: url('http://subtlepatterns.com/patterns/dark_exa.png');
+}
+
+
+.grand{
+	border: 5px solid white;
+	box-shadow: 0px 0px 20px 0px white;
+}
+h1 {
+	color: #03ADFD;
+	font-size: 40px;
+	font-family: 'Tangerine', serif;
+	text-shadow: 0px 0px 10px;
+}
+
+h2 {
+	color: #03ADFD;
+	font-size: 36px;
+	font-family: 'Tangerine', serif;
+	text-shadow: 0px 0px 10px;
+}
+
+h4 {
+	text-transform: lowercase;
+	font-size: 14px;
+	/*font-family: 'Amatic SC', cursive;*/
+	color:#9FF;
+	text-align: center;
+}
+
+
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #2C3E50;
+	font-weight: 400;
+	background-color: #ECF0F1;
+}
+
+a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 20px;
+	color:#9FF;
+}
+
+
+
+.greeting {
+	text-transform: lowercase;
+	font-size: 24px;
+	font-family: 'Amatic SC', cursive;
+	color:#9FF;
+}
+
+nav {
+	float: right;
+	/*margin-top: 100px;*/
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li{
+	float: left;
+	padding: 5px;
+}
+
+.container {
+	max-width: 850px;
+	margin: 40px auto;
+}
+
+.no-post {
+	text-align: center;
+	font-weight: 700;
+	color: #BDC3C7;
+	text-transform: uppercase;
+	font-size: 36px;
+}
+
+form label{
+	display: block;
+	margin: 30px 0 30px 0;
+	text-transform: lowercase;
+	color: #16A085;
+	width: 280px;
+	font-size: 26px;
+	font-family: 'Swanky and Moo Moo', cursive;
+}
+
+form input {
+	display: block;
+	margin-top: 10px;
+	font-size: 18px;
+	color: #2C3E50;
+	border-radius: 5px;
+	font-family: 'Swanky and Moo Moo', cursive;
+	/*float: right;*/
+}
+
+textarea {
+	font-size: 24px;
+	color: #2C3E50;
+	border-radius: 5px;
+	line-height: 1.2;
+}
+
+input[type='submit'] {
+	padding: 5px;
+	text-transform: lowercase;
+	background-color: #1ABC9C;
+	color: #fff;
+	border-color: transparent;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+
+
+
+
+.error {
+	color: #fff;
+	padding: 10px;
+	background-color: #E74C3C;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.success {
+	color: #fff;
+	padding: 10px;
+	background-color: #27AE60;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+article {
+	background: url('/static/img/back3.jpg') no-repeat center center;
+	padding: 25px;
+	border: #BDC3C7 solid 2px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.title {
+	font-family: 'Eater', cursive;
+	font-weight: 700;
+	color: #E67E22;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.post-content {
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+form {
+	background: #fff;
+	padding: 25px 25px;
+	border: #BDC3C7 solid 2px;
+	border-radius: 10px;
+}
+
+.author {
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #36383A;
+	font-size: 24px;
+	font-family: 'Amatic SC', cursive;
+}

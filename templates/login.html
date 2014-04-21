@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% set title='Login' %}
+
+{% block content %}
+	<form method="POST" action="/login">
+	<legend class="title">Login</legend>
+		<label for="username">
+			Username
+			<input type="text" name="username" required>
+		</label>
+		<label for="password">
+			Password
+			<input type="password" name="password" required>
+		</label>
+		<label for="submit">
+			<input type="submit" value="Login">
+		</label>
+	</form>
+{% endblock content %}

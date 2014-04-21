@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>{{ title }} &raquo; CampusTalent</title>
+		<meta charset="utf-8">
+		<meta name="author" content="kaushik">
+		<meta name="description" content="videobrowse">
+		<link rel="stylesheet" href="/static/css/style.css">
+	</head>
+
+	<body>
+    	<header>
+    	<nav>
+					<ul>
+						{% if user %}
+						<li><a href="/dashboard">Dashboard</a></li>
+						<li><a href="/newpost">Post</a></li>
+						<li><a href="/logout">Logout</a></li>
+						{% else %}
+						<li><a href="/">Home</a></li>
+						<li><a href="/login">Login</a></li>
+						<li><a href="/signup">Signup</a></li>
+						{% endif %}
+					</ul>
+		</nav>
+    	</header>
+		<div float=left>
+			{% if user %}
+			<a href="/dashboard"><img src="\static\img\logo.jpg"></a>
+			{% else %}
+			<a href="/"><img src="\static\img\logo.jpg"></a>
+			{% endif %}	
+		</div>
+		
+				<span class="greeting" float=left><b>Welcome, {{ user.username or 'Guest' }}!<b></span>
+				
+			{% if error %}
+			<section class="error">
+				{{error}}
+			</section>
+			{% endif %}
+			{% if success %}
+			<section class="success">
+				{{success}}
+			</section>
+			{% endif %}
+			<div class="container">
+				<section class="content">
+					{% block content %}
+					{% endblock content %}
+				</section>
+			</div>
+			<footer>
+  				<h4>&copy copyright:Swarna Koushik Debroy|(kaushik06101992@gmail.com)</h4>
+  				
+			</footer>
+	</body>
+
+</html>

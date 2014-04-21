@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% set title='Signup' %}
+
+{% block content %}
+	<form method="POST" action="/signup">
+		<legend class="title">Signup</legend>
+		<label for="username">
+			Username
+			<input type="text" name="username" required>
+		</label>
+		<label for="password">
+			Password
+			<input type="password" name="password" required>
+		</label>
+		<label for="group/individual">
+			Group's/Individual's Name
+			<input type="text" name="group" required>
+		</label>
+		<label for="college name">
+			College Name
+			<input type="text" name="college" required>
+		</label>
+		<label for="submit">
+			<input type="submit" value="Signup">
+		</label>
+	</form>
+{% endblock content %}
